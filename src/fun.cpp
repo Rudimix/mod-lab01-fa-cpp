@@ -44,14 +44,16 @@ unsigned int faStr2(const char *str) {
         } else if (islower(*str)) {
             if (inWord && isCapital) {
                 isRight = true;
-            } else isRight = false;
+            }
+            else isRight = false;
         } else if (!isalpha(*str)) {
             if (*str == ' ' && isRight) {
                 count++;
                 inWord = false;
                 isCapital = false;
                 isRight = false;
-            } else isRight = false;
+            }
+            else isRight = false;
         }
         str++;
     }
