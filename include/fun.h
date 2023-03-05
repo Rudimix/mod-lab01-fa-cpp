@@ -5,5 +5,9 @@
 unsigned int faStr1(const char *str);
 unsigned int faStr2(const char *str);
 unsigned int faStr3(const char *str);
+isalpha();
+isdigit();
+islower();
+isupper();
 
 #endif  // INCLUDE_FUN_H_
