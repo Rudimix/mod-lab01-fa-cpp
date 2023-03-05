@@ -44,8 +44,7 @@ unsigned int faStr2(const char *str) {
         } else if (islower(*str)) {
             if (inWord && isCapital) {
                 isRight = true;
-            }
-            else {
+            } else {
                 isRight = false;
             }
         } else if (!isalpha(*str)) {
@@ -54,8 +53,7 @@ unsigned int faStr2(const char *str) {
                 inWord = false;
                 isCapital = false;
                 isRight = false;
-            }
-            else {
+            } else {
                 isRight = false;
             }
         }
