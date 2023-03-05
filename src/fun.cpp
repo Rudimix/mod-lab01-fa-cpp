@@ -45,7 +45,9 @@ unsigned int faStr2(const char *str) {
             if (inWord && isCapital) {
                 isRight = true;
             }
-            else isRight = false;
+            else {
+                isRight = false;
+            }
         } else if (!isalpha(*str)) {
             if (*str == ' ' && isRight) {
                 count++;
@@ -53,7 +55,9 @@ unsigned int faStr2(const char *str) {
                 isCapital = false;
                 isRight = false;
             }
-            else isRight = false;
+            else {
+                isRight = false;
+            }
         }
         str++;
     }
