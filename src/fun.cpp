@@ -1,11 +1,6 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
 
-isalpha();
-isdigit();
-isupper();
-islower();
-
 unsigned int faStr1(const char *str) {
     unsigned int count = 0;
     bool inWord = false;
