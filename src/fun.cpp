@@ -97,6 +97,6 @@ unsigned int faStr3(const char *str) {
         countWords++;
         SumOfLetters += count;
     }
-    result = round(float(SumOfLetters) / countWords);
+    result = round(static_cast<float>(SumOfLetters) / countWords);
     return result;
 }
