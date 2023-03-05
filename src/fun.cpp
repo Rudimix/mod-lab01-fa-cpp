@@ -51,11 +51,14 @@ unsigned int faStr2(const char *str) {
             }
             else isRight = false;
         }
-        else if (!isupper(*str) && !islower(*str) && isRight) {
-            count++;
-            inWord = false;
-            isCapital = false;
-            isRight = false;
+        else if (!isalpha(*str)) {
+            if (*str == ' ' && isRight) {
+                count++;
+                inWord = false;
+                isCapital = false;
+                isRight = false;
+            }
+            else isRight = false;
         }
         str++;
     }
