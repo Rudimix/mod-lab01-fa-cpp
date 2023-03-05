@@ -1,6 +1,6 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
-#include <ctype.h>
+
 isalpha();
 isdigit();
 isupper();
