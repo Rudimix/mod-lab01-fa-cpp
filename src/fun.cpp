@@ -93,7 +93,7 @@ unsigned int faStr3(const char *str) {
         }
         str++;
     }
-    if (*str == '\0') {
+    if (*str == '\0' && inWord) {
         countWords++;
         SumOfLetters += count;
     }
